@@ -101,6 +101,55 @@
   </div>
 
   <script type="text/javascript" src="js/layui/layui.js"></script>
+<!-- footer -->
+<div class="footer">
+  <div class="container">
+    <div class="w3social-icons">
+      <p>Copyright &copy; 广州互银技术有限公司 </p>
+    </div>
+  </div>
+</div>
 
+
+<!-- //footer -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+<!--scrolling js-->
+<script src="js/jquery.nicescroll1.js"></script>
+<script src="js/scripts1.js"></script>
+<!--//scrolling js-->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap1.js"></script>
 </body>
 </html>
